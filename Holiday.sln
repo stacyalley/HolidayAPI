@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Holiday API", "Holiday API\Holiday API.csproj", "{2E8C84DD-9591-44D2-BB94-4D6D1AEDA0D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Holiday APITests", "Holiday APITests\Holiday APITests.csproj", "{77D88224-A4E5-4ABE-939E-5BAC0C3B8DDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E8C84DD-9591-44D2-BB94-4D6D1AEDA0D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E8C84DD-9591-44D2-BB94-4D6D1AEDA0D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E8C84DD-9591-44D2-BB94-4D6D1AEDA0D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E8C84DD-9591-44D2-BB94-4D6D1AEDA0D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77D88224-A4E5-4ABE-939E-5BAC0C3B8DDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77D88224-A4E5-4ABE-939E-5BAC0C3B8DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77D88224-A4E5-4ABE-939E-5BAC0C3B8DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77D88224-A4E5-4ABE-939E-5BAC0C3B8DDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C496721B-B617-48CF-A494-656D8C5CD94F}
+	EndGlobalSection
+EndGlobal
