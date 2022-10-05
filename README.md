@@ -8,7 +8,10 @@ The information returned will include the name of the holiday, a description of 
 Requires .NET 6.0
 
 # How to Use
-
+Open project in Visual Studio
+Build and run project
+When browser opens, there will be a 'Bad Request' response since the URL does not contain a date.
+Enter a date at the end of the URL like in the example below.  2021-01-01 is a valid holiday date in the data base.
 `https://localhost:44306/holiday?queryDate=yyyy-MM-dd`
 
 # API Endpoints
