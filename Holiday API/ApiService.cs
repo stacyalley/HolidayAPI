@@ -15,7 +15,7 @@ namespace Holiday_API
         /// <returns>FedHolidayDate</returns>
         /// 
 
-        public FedHolidayDate GetUsFedHolidayFromDB(DateTime dt)
+        public FedHoliday GetUsFedHolidayFromDB(DateTime dt)
         {
             using (HolidayDbContext dataContext = new HolidayDbContext())
             {
@@ -33,9 +33,9 @@ namespace Holiday_API
                         .Equals(fhd.FedHolidayID))
                         .FirstOrDefault<FedHoliday>();
 
-                fhd.FedHoliday = fh;
+                //fhd.FedHoliday = fh;
 
-                return fhd;
+                return fh;
             }               
      
         }

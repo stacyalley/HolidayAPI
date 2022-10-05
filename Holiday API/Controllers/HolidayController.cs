@@ -1,9 +1,6 @@
 ﻿using Holiday_API.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Net.Http;
-using System.Threading.Tasks;
 
 namespace Holiday_API.Controllers
 {
@@ -22,7 +19,7 @@ namespace Holiday_API.Controllers
         public IActionResult Get(string queryDate)
         {
 
-            FedHolidayDate hd = new FedHolidayDate();
+            FedHoliday hd = new FedHoliday();
             ApiService dataService = new ApiService();
 
             DateTime dt = dataService.CheckDateTime(queryDate);
