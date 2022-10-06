@@ -11,8 +11,11 @@ Solution developed in VS 2022
 # How to Use
 * Open Solution in Visual Studio 2022. Double click the Holiday solution .sln file to load the Solution projects. The "HolidayAPI" project should be selected as the Solution's Startup Project. Run the project by clicking the "IIS Express" button in Visual Studio. When prompted, select "Yes" to trust the IIS Express SSL Certificate, then click "yes" to allow the installation of the certificate. 
 * Build and run project
-* Visual Studio will launch a browser session that will initially return an Invalid Response error since no queryDate parameter is supplied. To pass a queryDate parameter to the WebAPI endpoint, append a queryDate parameter with an ISO 8601 compliant date format. For example:
-`https://localhost:44306/holiday?queryDate=2021-01-18`
+* Visual Studio will launch a browser session that will initially return an Invalid Response error since no queryDate parameter is supplied. To pass a queryDate parameter to the WebAPI endpoint, append a queryDate parameter with an ISO 8601 compliant date format. For example:  
+* Fixed holiday  
+`https://localhost:44306/holiday?queryDate=2023-12-25`  
+* Floating holiday  
+`https://localhost:44306/holiday?queryDate=2021-01-18` 
 
 * For a complete listing of all the holiday dates included in this API, refer to   
 [https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/](https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/)
@@ -38,6 +41,5 @@ Microsoft.EntityFrameworkCore.Sqlite
 [Holiday.pdf](https://github.com/stacyalley/Holiday/files/9701521/Holiday.pdf)
 
 # Assumptions Made
-* The date entered is the observed (pay day off for federal employees) holiday
-* The request is coming from web app
-* The user knows to search for dates in the years 2021-2023
+* The date entered is the observed (paid day off for federal employees) holiday
+* API caller is aware of date range in data: 2021,2022,2023
