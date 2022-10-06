@@ -35,7 +35,7 @@ Not Found 404 - Indicates date not found
 Bad Request 400 - Indicates a missing or malformed date query parameter  
 
 # Libraries Used
-Microsoft.EntityFrameworkCore.Sqlite
+Microsoft.EntityFrameworkCore.Sqlite (6.0.9)
 
 # Database Schema
 [Holiday.pdf](https://github.com/stacyalley/Holiday/files/9701521/Holiday.pdf)
