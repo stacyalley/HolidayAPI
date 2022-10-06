@@ -4,6 +4,9 @@ using System.Linq;
 
 namespace Holiday_API
 {
+    /// <summary>
+    /// Services for returning US federal holiday data
+    /// </summary>
     public class ApiService
     {
         /// <summary>
@@ -14,7 +17,6 @@ namespace Holiday_API
         /// <param name="inputDate"></param>
         /// <returns>FedHolidayDate</returns>
         /// 
-
         public FedHoliday GetUsFedHolidayFromDB(DateTime dt)
         {
             using (HolidayDbContext dataContext = new HolidayDbContext())
@@ -38,6 +40,11 @@ namespace Holiday_API
      
         }
 
+        /// <summary>
+        /// Returns a HolidayResponse
+        /// </summary>
+        /// <param name="hd"></param>
+        /// <returns>HolidayResponse</returns>
         public HolidayResponse GetHolidayResponse(FedHoliday hd)
         {
             HolidayResponse hr = new HolidayResponse
@@ -51,7 +58,6 @@ namespace Holiday_API
 
         }
             
-
 
         /// <summary>
         /// Returns a DateTime created by input string for requested date.
