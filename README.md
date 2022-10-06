@@ -46,3 +46,56 @@ Microsoft.EntityFrameworkCore.Sqlite (6.0.9)
 * API caller is aware of date range in data: 2021, 2022, 2023
 * If a requested date is not found in the database the API will return a 404 Not Found response
 * If a requested date string cannot be converted to a date the API will return a 400 Bad Request response
+
+# Feedback  
+## General Notes: 
+While challenging, this project was a great opportunity for me to learn more about each aspect that was required to complete it - from setting up Visual Studio, the SQLite data base, and Git to learning about LINQ and Web APIs. It will be reflected in the Time Spent section that I started from a place of minimal experience in building a API in C#. I know there is still so much more for me to learn, but I had fun with this project and would look forward to gaining more experience.
+
+## Time Spent  
+Total - 41 hours
+
+C#/.NET solution  
+8 Research  
+4 Development   
+12 Total (hours)
+  
+SQLite database  
+2 Research  
+2 Development  
+4 Total (hours)  
+  
+Web API  
+3 Research  
+3 Development  
+6 Total (hours)  
+
+LINQ/Datacontext  
+3 Research  
+4 Development  
+7 Total (hours)  
+
+Documentation  
+4 Research  
+2 Development  
+6 Total (hours)  
+
+Git repo  
+4 Research  
+2 Development  
+6 Total (hours)  
+  
+Total  
+24 Research  
+17 Development  
+41 Total (hours)  
+
+## Problems/Issues:
+I ran into issues when trying to remove unneeded directories of files from the Git repository.  I did have to start over with a completely new repo.
+
+## Enhancements:
+* Better error handling/feed back for dates entered that were not found in the data base.
+* Add options to return all federal holidays for a given month/year or  entire year.
+* Ability to add more dates to the database
+
+
+
