@@ -1,5 +1,4 @@
 # Holiday
-Federal Holidays project for Chelan PUD.
 
 This API accepts a ISO 8601 formated date and will return a JSON object if the date is a US Federal Holiday in the year 2021, 2022, or 2023.
 The information returned will include the name of the holiday, a description of the holiday, and whether the holiday is a fixed or floating holiday.
@@ -44,4 +43,6 @@ Microsoft.EntityFrameworkCore.Sqlite (6.0.9)
 
 # Assumptions Made
 * The date entered is the observed (paid day off for federal employees) holiday
-* API caller is aware of date range in data: 2021,2022,2023
+* API caller is aware of date range in data: 2021, 2022, 2023
+* If a requested date is not found in the database the API will return a 404 Not Found response
+* If a requested date string cannot be converted to a date the API will return a 400 Bad Request response
