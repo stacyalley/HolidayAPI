@@ -25,10 +25,12 @@ Solution developed in VS 2022
 
 ## Example Response
 Ok 200 - Returns valid US Federal Holiday with specified elements.  
-{"fedHolidayID":2,  
-"holiday_name":"Birthday of Martin Luther King, Jr.",  
-"holiday_descr":"This holiday is always observed on the third Monday of January.",  
-"is_fixed":false}
+{  
+  "fedHolidayID":2,  
+  "holiday_name":"Birthday of Martin Luther King, Jr.",  
+  "holiday_descr":"This holiday is always observed on the third Monday of January.",  
+  "is_fixed":false  
+}
   
 Not Found 404 - Indicates date not found  
   
