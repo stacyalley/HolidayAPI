@@ -28,13 +28,17 @@ namespace Holiday_API.Controllers
             {
                 return BadRequest();
             }
+            
             hd = dataService.GetUsFedHolidayFromDB(dt);
+            
             if(hd == null)
             {
                 return NotFound();
             }
 
-            return Ok(hd);
+            HolidayResponse hr = dataService.GetHolidayResponse(hd);
+            
+            return Ok(hr);
         }
     }
 }

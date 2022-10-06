@@ -33,12 +33,24 @@ namespace Holiday_API
                         .Equals(fhd.FedHolidayID))
                         .FirstOrDefault<FedHoliday>();
 
-                //fhd.FedHoliday = fh;
-
                 return fh;
             }               
      
         }
+
+        public HolidayResponse GetHolidayResponse(FedHoliday hd)
+        {
+            HolidayResponse hr = new HolidayResponse
+            {
+                HolidayDescription = hd.Holiday_descr,
+                HolidayName = hd.Holiday_name,
+                IsFixed = hd.Is_fixed,
+                IsHoliday = true
+            };
+            return hr;
+
+        }
+            
 
 
         /// <summary>
