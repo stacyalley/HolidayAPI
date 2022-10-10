@@ -1,4 +1,5 @@
 ﻿using Holiday_API.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 
@@ -21,23 +22,15 @@ namespace Holiday_API
         {
             using (HolidayDbContext dataContext = new HolidayDbContext())
             {
+
                 var fhd = dataContext.FedHolidayDates
-                    .Where(x => x.Holiday_date == dt.ToString("yyyy-MM-dd"))
+                    .Where(x=> x.Holiday_date == dt.ToString("yyyy-MM-dd"))
+                    .Include(x=> x.FedHoliday)
                     .ToList<FedHolidayDate>()
                     .FirstOrDefault();
+                return fhd.FedHoliday;
 
-                //if the date was not a holiday date then bail out
-                if(fhd is null) {return null;}
-
-                var fh = dataContext
-                        .FedHolidays
-                        .Where(x => x.FedHolidayID
-                        .Equals(fhd.FedHolidayID))
-                        .FirstOrDefault<FedHoliday>();
-
-                return fh;
             }               
-     
         }
 
         /// <summary>

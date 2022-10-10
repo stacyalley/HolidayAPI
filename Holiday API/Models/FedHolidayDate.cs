@@ -10,13 +10,10 @@ namespace Holiday_API.Models
         public int FedHolidayDateID { get; set; }
         public string Holiday_date { get; set; }
 
-
-
-        public Nullable<int> FedHolidayID { get; set; }
-
-
         [ForeignKey("FedHolidayID")]
-        public FedHoliday FedHoliday { get; set; }
+        public int FedHolidayID { get; set; }
+        
+        public virtual FedHoliday FedHoliday { get; set; }
 
     }
 }
